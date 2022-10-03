@@ -137,34 +137,8 @@
   
   animation: snow 1.5s linear  infinite ;
 }
-#clouds{
- 
-  opacity: 100%;
-    height: 100%;
-    background: url(https://static.radulescu.me/examples/clouds/clouds1000.png);
-    background: url(https://static.radulescu.me/examples/clouds/clouds1000.png) 0 200px,
-                url(https://static.radulescu.me/examples/clouds/clouds1200_1.png) 0 300px,
-                url(https://static.radulescu.me/examples/clouds/clouds1000_blur3.png) 100px 250px,
-                ;
-                
-      animation: wind 20s linear infinite;
-  }
-  @keyframes wind{
-    0% {
-      background-position: 0 200px, 0 300px, 100px 250px;
-    }
-    100% {
-      background-position: 1000px 200px, 1200px 300px, 1100px 250px;
-    }
-  
-  }
-.container3{
-  background: linear-gradient(to bottom right, #0666d4 ,#1D4ED8);
-  height:100%;
-  width:100%;
-  position:absolute;
-  
-}
+
+
 .container2{
   background: linear-gradient(to bottom right, #044c99 ,#1c48c2);
   height:100%;
@@ -245,4 +219,46 @@ p{
 }
 .txt2:hover {
  color:rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+.haze-1 {
+  background-image: url("https://cdn.discordapp.com/attachments/990641651175264306/1026619079949291570/clouds_233.png");
+  animation: clouds-loop-1 20s infinite linear;
+  
+}
+.haze-2 {
+  background-image: url("https://cdn.discordapp.com/attachments/990641651175264306/1026617444720201728/clouds_991.png");
+  animation: clouds-loop-2 15s infinite linear;
+}
+.haze-3 {
+  background-image: url("https://cdn.discordapp.com/attachments/990641651175264306/1026615143339147374/clouds_55553.png");
+  animation: clouds-loop-3 17s infinite linear;
+}
+.haze {
+  background: linear-gradient(to bottom right, #09091f ,#010922);
+  opacity: 0.4;
+  overflow: hidden;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  
+}
+
+.haze-1,
+.haze-2,
+.haze-3 {
+  background-repeat: repeat-x;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height:100%;
 }
